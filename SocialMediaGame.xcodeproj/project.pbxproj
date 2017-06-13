@@ -19,6 +19,7 @@
 		106F9DAF1EEFA9E50070BE15 /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F9DAE1EEFA9E50070BE15 /* NewsController.swift */; };
 		10C029F81EEF9AAC00E89CA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10C029F71EEF9AAC00E89CA9 /* GoogleService-Info.plist */; };
 		10C02A3F1EEFD5CA00E89CA9 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C02A3E1EEFD5CA00E89CA9 /* AddPostViewController.swift */; };
+		10C02A411EEFF5F600E89CA9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C02A401EEFF5F600E89CA9 /* User.swift */; };
 		10D513261EEFB75000468B4B /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D513251EEFB75000468B4B /* CustomTabBar.swift */; };
 		B1B93DDBBC0939320BA43870 /* Pods_SocialMediaGameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6526BCCBBC1A0919EAF7FE8A /* Pods_SocialMediaGameTests.framework */; };
 		B5811413C47C29548F11A3FC /* Pods_SocialMediaGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8719599E93155FAA0BEEC0B /* Pods_SocialMediaGame.framework */; };
@@ -61,6 +62,7 @@
 		106F9DAE1EEFA9E50070BE15 /* NewsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
 		10C029F71EEF9AAC00E89CA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		10C02A3E1EEFD5CA00E89CA9 /* AddPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		10C02A401EEFF5F600E89CA9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		10D513251EEFB75000468B4B /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		5B5990BB1B64030161C534EE /* Pods-SocialMediaGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMediaGameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMediaGameTests/Pods-SocialMediaGameTests.release.xcconfig"; sourceTree = "<group>"; };
 		640766247E7C48B7C4011DAA /* Pods-SocialMediaGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMediaGameUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMediaGameUITests/Pods-SocialMediaGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		10C029F41EEF92B700E89CA9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				10C02A401EEFF5F600E89CA9 /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10C02A411EEFF5F600E89CA9 /* User.swift in Sources */,
 				106F9DAD1EEFA9D30070BE15 /* HomeController.swift in Sources */,
 				106F9DAB1EEFA1490070BE15 /* TabBarController.swift in Sources */,
 				101E47DE1EEF84700016583E /* LoginViewController.swift in Sources */,

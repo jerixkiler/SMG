@@ -28,11 +28,27 @@ class AddPostViewController: UIViewController , UINavigationControllerDelegate ,
     var postDictionary: [String: Any] = [:]
     
     var postID: String?
+    
+    var user: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        databaseRef = Database.database().reference()
+        getUserData()
+        
+    }
+    
+    func getUserData(){
+        databaseRef.child("Users").child(uid).observeSingleEvent(of: .value, with: {(snapshot) in
+            self.user = User(snap: snapshot)
+            //this code is just to show the UserClass was populated.
+            print(self.user?.email)
+            print(self.user?.displayName)
+            print(self.user?.photoUrl)
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,7 +60,7 @@ class AddPostViewController: UIViewController , UINavigationControllerDelegate ,
         uploadImagePartTwo(data: imageDataTemporary!)
         postID = databaseRef.childByAutoId().key
         let time_created = NSDate().timeIntervalSince1970
-        postDictionary = ["post_description" : postDescription.text!,"author_user_id": uid , "post_title": postTitle.text! , "time_created": time_created]
+        postDictionary = ["post_description" : postDescription.text!,"\(uid)": "\(user.displayName),\(user.email),\(user.photoUrl)" , "post_title": postTitle.text! , "time_created": time_created]
         databaseRef.child("Posts").child(postID!).setValue(postDictionary)
         print("Post Added!")
     }
@@ -76,7 +92,7 @@ class AddPostViewController: UIViewController , UINavigationControllerDelegate ,
     }
     
     func uploadImagePartTwo(data: Data){
-        let storageRef = Storage.storage().reference(withPath: "\(uid)/\(databaseRef.childByAutoId().key)")
+        let storageRef = Storage.storage().reference(withPath: "\(uid)/\(databaseRef.childByAutoId().key).jpg")
         let uploadMetaData = StorageMetadata()
         uploadMetaData.contentType = "images/jpeg"
         let uploadTask = storageRef.putData(data, metadata: uploadMetaData, completion: { (metadata,error) in
