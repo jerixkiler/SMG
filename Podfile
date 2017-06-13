@@ -7,6 +7,18 @@ target 'SocialMediaGame' do
 
   # Pods for SocialMediaGame
 
+pod ‘Firebase/Core’
+pod ‘Firebase/Auth’
+pod ‘GoogleSignIn’
+pod ‘FBSDKLoginKit’
+pod ‘FBSDKShareKit’
+pod ‘FBSDKCoreKit’
+pod ‘Firebase/Storage’
+pod 'FirebaseUI/Storage'
+pod 'SDWebImage/Core’
+pod 'Firebase/Database'
+pod 'JSQMessagesViewController'
+
   target 'SocialMediaGameTests' do
     inherit! :search_paths
     # Pods for testing
