@@ -19,6 +19,7 @@ pod 'SDWebImage/Core’
 pod 'Firebase/Database'
 pod 'JSQMessagesViewController'
 pod 'XLPagerTabStrip'
+pod 'SkyFloatingLabelTextField'
 
   target 'SocialMediaGameTests' do
     inherit! :search_paths

@@ -10,10 +10,14 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
-class LoginViewController: UIViewController , GIDSignInDelegate , GIDSignInUIDelegate {
+class LoginViewController: UIViewController , GIDSignInDelegate , GIDSignInUIDelegate, UITextFieldDelegate {
 
     // MARK: Properties
     
+    @IBOutlet weak var facebookLogin: UIButton!
+    @IBOutlet weak var googleLogin: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet var backColor: UIView!
     
     var databaseRef: DatabaseReference!
     
@@ -23,8 +27,11 @@ class LoginViewController: UIViewController , GIDSignInDelegate , GIDSignInUIDel
         databaseRef = Database.database().reference()
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().delegate = self
+        googleLogin.layer.cornerRadius = 18
+        facebookLogin.layer.cornerRadius = 18
         
     }
+    
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         print("User Sign in to Google")
@@ -48,6 +55,8 @@ class LoginViewController: UIViewController , GIDSignInDelegate , GIDSignInUIDel
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
 
     @IBAction func googleSignIn(_ sender: Any) {
         GIDSignIn.sharedInstance().signIn()

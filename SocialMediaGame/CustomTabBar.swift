@@ -12,17 +12,19 @@ class CustomTabBar: UITabBarController {
     
    
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.navigationController?.navigationBar.layer.borderWidth = 0
         self.tabBar.layer.borderWidth = 0
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.tabBar.shadowImage = UIImage()
-        self.tabBar.backgroundImage = UIImage()
-        self.tabBar.barTintColor = UIColor.white
+        
+        self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for:.selected)
+        self.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for:.normal)
         self.tabBar.frame = CGRect(x: 0, y: (self.navigationController?.navigationBar.frame.size.height)! + 20 , width: self.tabBar.frame.size.width, height: self.tabBar.frame.size.height)
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
