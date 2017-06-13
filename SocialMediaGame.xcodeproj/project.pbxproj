@@ -127,12 +127,10 @@
 		101E47DA1EEF846F0016583E /* SocialMediaGame */ = {
 			isa = PBXGroup;
 			children = (
-				101E47DB1EEF84700016583E /* AppDelegate.swift */,
-				101E47DD1EEF84700016583E /* ViewController.swift */,
-				101E47DF1EEF84700016583E /* Main.storyboard */,
-				101E47E21EEF84700016583E /* Assets.xcassets */,
-				101E47E41EEF84700016583E /* LaunchScreen.storyboard */,
-				101E47E71EEF84710016583E /* Info.plist */,
+				10C029F61EEF92C300E89CA9 /* Important Files */,
+				10C029F51EEF92BD00E89CA9 /* UI */,
+				10C029F41EEF92B700E89CA9 /* Models */,
+				10C029F31EEF92B000E89CA9 /* Controllers */,
 			);
 			path = SocialMediaGame;
 			sourceTree = "<group>";
@@ -153,6 +151,40 @@
 				101E47FD1EEF84710016583E /* Info.plist */,
 			);
 			path = SocialMediaGameUITests;
+			sourceTree = "<group>";
+		};
+		10C029F31EEF92B000E89CA9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				101E47DD1EEF84700016583E /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		10C029F41EEF92B700E89CA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		10C029F51EEF92BD00E89CA9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				101E47E21EEF84700016583E /* Assets.xcassets */,
+				101E47DF1EEF84700016583E /* Main.storyboard */,
+				101E47E41EEF84700016583E /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		10C029F61EEF92C300E89CA9 /* Important Files */ = {
+			isa = PBXGroup;
+			children = (
+				101E47E71EEF84710016583E /* Info.plist */,
+				101E47DB1EEF84700016583E /* AppDelegate.swift */,
+			);
+			name = "Important Files";
 			sourceTree = "<group>";
 		};
 		7612E549D31ED8B59FFED98F /* Frameworks */ = {
@@ -700,6 +732,7 @@
 				101E48021EEF84710016583E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		101E48031EEF84710016583E /* Build configuration list for PBXNativeTarget "SocialMediaGameTests" */ = {
 			isa = XCConfigurationList;
@@ -708,6 +741,7 @@
 				101E48051EEF84710016583E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		101E48061EEF84710016583E /* Build configuration list for PBXNativeTarget "SocialMediaGameUITests" */ = {
 			isa = XCConfigurationList;
@@ -716,6 +750,7 @@
 				101E48081EEF84710016583E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
