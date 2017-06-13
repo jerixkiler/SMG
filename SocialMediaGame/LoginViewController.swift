@@ -13,8 +13,6 @@ import GoogleSignIn
 class LoginViewController: UIViewController , GIDSignInDelegate , GIDSignInUIDelegate {
 
     // MARK: Properties
-    
-    
     var databaseRef: DatabaseReference!
     
     override func viewDidLoad() {
@@ -25,7 +23,6 @@ class LoginViewController: UIViewController , GIDSignInDelegate , GIDSignInUIDel
         GIDSignIn.sharedInstance().delegate = self
         
     }
-    
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         print("User Sign in to Google")
         guard let authentication = user.authentication else { return }
@@ -43,7 +40,6 @@ class LoginViewController: UIViewController , GIDSignInDelegate , GIDSignInUIDel
             })
         }
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

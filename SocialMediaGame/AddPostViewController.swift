@@ -45,9 +45,9 @@ class AddPostViewController: UIViewController , UINavigationControllerDelegate ,
         databaseRef.child("Users").child(uid).observeSingleEvent(of: .value, with: {(snapshot) in
             self.user = User(snap: snapshot)
             //this code is just to show the UserClass was populated.
-            print(self.user?.email)
-            print(self.user?.displayName)
-            print(self.user?.photoUrl)
+            print(self.user.email)
+            print(self.user.displayName)
+            print(self.user.photoUrl)
         })
     }
 
@@ -78,6 +78,10 @@ class AddPostViewController: UIViewController , UINavigationControllerDelegate ,
         dismiss(animated: true, completion: nil)
     }
     
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     func presentImagePickerController(){
         print("Clicked the image view")
         let imagePickerController = UIImagePickerController()
@@ -92,7 +96,7 @@ class AddPostViewController: UIViewController , UINavigationControllerDelegate ,
     }
     
     func uploadImagePartTwo(data: Data){
-        let storageRef = Storage.storage().reference(withPath: "\(uid)/\(databaseRef.childByAutoId().key).jpg")
+        let storageRef = Storage.storage().reference(withPath: "\(uid)/\(databaseRef.childByAutoId().key)")
         let uploadMetaData = StorageMetadata()
         uploadMetaData.contentType = "images/jpeg"
         let uploadTask = storageRef.putData(data, metadata: uploadMetaData, completion: { (metadata,error) in
