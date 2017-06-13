@@ -72,6 +72,7 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - XLPagerTabStrip (7.0.0)
 
 DEPENDENCIES:
   - FBSDKCoreKit
@@ -85,6 +86,7 @@ DEPENDENCIES:
   - GoogleSignIn
   - JSQMessagesViewController
   - SDWebImage/Core
+  - XLPagerTabStrip
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -106,7 +108,8 @@ SPEC CHECKSUMS:
   JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  XLPagerTabStrip: 9be80a66c6b7d60306b2c0a6004965016d68f813
 
-PODFILE CHECKSUM: 9c07170f802e3de4412b21be1437802dafd65bc5
+PODFILE CHECKSUM: 8470ca1f2ac886d3a8e1a9c06369c2b4e7feb508
 
 COCOAPODS: 1.2.1
