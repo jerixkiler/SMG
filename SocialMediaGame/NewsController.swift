@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import XLPagerTabStrip
 
-class NewsController: UIViewController, IndicatorInfoProvider {
+
+class NewsController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +23,6 @@ class NewsController: UIViewController, IndicatorInfoProvider {
     }
     
 
-    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-        return IndicatorInfo(title: "Child2")
-    }
+
 
 }

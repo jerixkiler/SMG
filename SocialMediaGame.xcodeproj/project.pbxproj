@@ -17,8 +17,10 @@
 		106F9DAB1EEFA1490070BE15 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F9DAA1EEFA1490070BE15 /* TabBarController.swift */; };
 		106F9DAD1EEFA9D30070BE15 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F9DAC1EEFA9D30070BE15 /* HomeController.swift */; };
 		106F9DAF1EEFA9E50070BE15 /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106F9DAE1EEFA9E50070BE15 /* NewsController.swift */; };
+		108133F01EF0E9690074FD6B /* rootNavPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108133EF1EF0E9690074FD6B /* rootNavPageMenu.swift */; };
+		108133F61EF11E8C0074FD6B /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108133F51EF11E8C0074FD6B /* MenuTableViewCell.swift */; };
 		10C029F81EEF9AAC00E89CA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10C029F71EEF9AAC00E89CA9 /* GoogleService-Info.plist */; };
-		10D513261EEFB75000468B4B /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D513251EEFB75000468B4B /* CustomTabBar.swift */; };
+		10FC56161EF009C80025E3B5 /* PageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FC56151EF009C80025E3B5 /* PageMenu.swift */; };
 		B1B93DDBBC0939320BA43870 /* Pods_SocialMediaGameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6526BCCBBC1A0919EAF7FE8A /* Pods_SocialMediaGameTests.framework */; };
 		B5811413C47C29548F11A3FC /* Pods_SocialMediaGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8719599E93155FAA0BEEC0B /* Pods_SocialMediaGame.framework */; };
 		F25AC9478FDEE81EE0345DC8 /* Pods_SocialMediaGameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD656C2DC7E259FC2CE95E0 /* Pods_SocialMediaGameUITests.framework */; };
@@ -58,8 +60,10 @@
 		106F9DAA1EEFA1490070BE15 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		106F9DAC1EEFA9D30070BE15 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		106F9DAE1EEFA9E50070BE15 /* NewsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
+		108133EF1EF0E9690074FD6B /* rootNavPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rootNavPageMenu.swift; sourceTree = "<group>"; };
+		108133F51EF11E8C0074FD6B /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		10C029F71EEF9AAC00E89CA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		10D513251EEFB75000468B4B /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		10FC56151EF009C80025E3B5 /* PageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenu.swift; sourceTree = "<group>"; };
 		5B5990BB1B64030161C534EE /* Pods-SocialMediaGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMediaGameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMediaGameTests/Pods-SocialMediaGameTests.release.xcconfig"; sourceTree = "<group>"; };
 		640766247E7C48B7C4011DAA /* Pods-SocialMediaGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMediaGameUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMediaGameUITests/Pods-SocialMediaGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6526BCCBBC1A0919EAF7FE8A /* Pods_SocialMediaGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialMediaGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +175,9 @@
 				106F9DAA1EEFA1490070BE15 /* TabBarController.swift */,
 				106F9DAC1EEFA9D30070BE15 /* HomeController.swift */,
 				106F9DAE1EEFA9E50070BE15 /* NewsController.swift */,
+				10FC56151EF009C80025E3B5 /* PageMenu.swift */,
+				108133EF1EF0E9690074FD6B /* rootNavPageMenu.swift */,
+				108133F51EF11E8C0074FD6B /* MenuTableViewCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -205,7 +212,6 @@
 		10D513221EEFB6FD00468B4B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				10D513251EEFB75000468B4B /* CustomTabBar.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -502,11 +508,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10FC56161EF009C80025E3B5 /* PageMenu.swift in Sources */,
+				108133F01EF0E9690074FD6B /* rootNavPageMenu.swift in Sources */,
+				108133F61EF11E8C0074FD6B /* MenuTableViewCell.swift in Sources */,
 				106F9DAD1EEFA9D30070BE15 /* HomeController.swift in Sources */,
 				106F9DAB1EEFA1490070BE15 /* TabBarController.swift in Sources */,
 				101E47DE1EEF84700016583E /* LoginViewController.swift in Sources */,
 				106F9DAF1EEFA9E50070BE15 /* NewsController.swift in Sources */,
-				10D513261EEFB75000468B4B /* CustomTabBar.swift in Sources */,
 				101E47DC1EEF84700016583E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
